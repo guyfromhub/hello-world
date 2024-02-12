@@ -1,0 +1,38 @@
+[
+    {
+        "qid": 1,
+        "question": "Hello ?",
+        "options": [
+            "World",
+            "Earth",
+            "Mars",
+            "Jupiter"
+        ],
+        "correct": "World",
+        "chosenOne": ""
+    },
+    {
+        "qid": 2,
+        "question": "How are you?",
+        "options": [
+            "Good",
+            "Not Fine",
+            "Fine",
+            "Not Good"
+        ],
+        "correct": "Fine",
+        "chosenOne": ""
+    },
+    {
+        "qid": 3,
+        "question": "What year is this?",
+        "options": [
+            "2014",
+            "2022",
+            "2023",
+            "2024"
+        ],
+        "correct": "2024",
+        "chosenOne": ""
+    }
+]

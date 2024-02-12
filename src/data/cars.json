@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Ford",
+        "price": 15000,
+        "year": 2021,
+        "contact": {
+            "dealer": "Smit",
+            "number": "111-111-1110"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Corvette",
+        "price": 35000,
+        "year": 2020,
+        "contact": {
+            "dealer": "Smit",
+            "number": "111-111-1110"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Mustang",
+        "price": 75000,
+        "year": 2023,
+        "contact": {
+            "dealer": "Smit",
+            "number": "111-111-1110"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Lamborghini",
+        "price": 105000,
+        "year": 2022,
+        "contact": {
+            "dealer": "Smit",
+            "number": "111-111-1110"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Mercedes",
+        "price": 85000,
+        "year": 2019,
+        "contact": {
+            "dealer": "Smit",
+            "number": "111-111-1110"
+        }
+    }
+]
