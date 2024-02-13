@@ -2,7 +2,8 @@
     <div v-if="loading" class="loading-screen">
         <p>Loading...</p>
     </div>
-    <div class="w-screen bg-slate-950 box-border h-screen text-slate-50 font-serif" v-else>
+    <div class="w-screen bg-gradient-to-br  from-slate-950 box-border h-screen text-slate-50 font-serif" :class="toColor"
+        v-else>
         <nav
             class="w-screen bg-slate-900/80 flex fixed shadow-lg border-y rounded-b-2xl border-blue-950 shadow-gray-500/30 py-2  text-blue-300 group overflow-hidden ">
 
@@ -128,6 +129,21 @@ const clear = () => {
     place.value = "";
 };
 
+var toColor = ref("")
+
+function chngBg(colorTemp) {
+    console.log(toColor.value, colorTemp)
+    if (colorTemp <= 18) {
+        toColor.value = " to-blue-500 "
+    } else if (colorTemp > 18.1) {
+        toColor.value = "to-yellow-500"
+    } else {
+        toColor.value = "slate-950"
+    }
+    console.log(toColor.value, colorTemp)
+}
+
+
 const displayRes = () => {
     console.log(place.value)
     Contloading.value = true;
@@ -150,6 +166,7 @@ const displayRes = () => {
                 clear()
                 console.log(cityName.value);
                 Contloading.value = false;
+                chngBg(cityName.value.current.temp_c)
                 document.activeElement.blur();
             })
             .catch(error => {
