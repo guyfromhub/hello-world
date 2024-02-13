@@ -134,9 +134,9 @@ var toColor = ref("")
 function chngBg(colorTemp) {
     console.log(toColor.value, colorTemp)
     if (colorTemp <= 18) {
-        toColor.value = " to-blue-500 "
+        toColor.value = " to-blue-600 "
     } else if (colorTemp > 18.1) {
-        toColor.value = "to-yellow-500"
+        toColor.value = "to-yellow-600"
     } else {
         toColor.value = "slate-950"
     }
