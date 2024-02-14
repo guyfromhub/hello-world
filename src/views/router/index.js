@@ -1,7 +1,7 @@
 // Routing Rules Defined Here//
 
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../weather/vue/weatherHome.vue"
+import HomeView from "../Todo/trialform.vue"
 
 
 const router = createRouter({
