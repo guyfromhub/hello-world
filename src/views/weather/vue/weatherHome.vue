@@ -5,7 +5,7 @@
     <div class="w-screen bg-gradient-to-br  from-slate-950 box-border h-screen text-slate-50 font-serif" :class="toColor"
         v-else>
         <nav
-            class="w-screen bg-slate-900/80 flex fixed shadow-lg border-y rounded-b-2xl border-blue-950 shadow-gray-500/30 py-2  text-blue-300 group overflow-hidden ">
+            class="w-screen bg-slate-900/30 flex fixed shadow-lg border-y rounded-b-2xl border-blue-50/50 shadow-gray-500/30 py-2  text-blue-300 group overflow-hidden ">
 
             <span
                 class=" before:block px-3 before:absolute before:-inset-6 before:-rotate-[10deg] before:-skew-y-12 before:bg-slate-200/10 relative inline-block ">
@@ -17,7 +17,8 @@
                             class="material-symbols-outlined bg-clip-text text-transparent bg-gradient-to-b from-yellow-400 via-yellow-400 to-orange-800">
                             clear_day</p>
                     </h1>
-                </span></span>
+                </span>
+            </span>
             <input type="search" id="search" v-model="place" placeholder="search" class="clicked"
                 :class="{ 'material-symbols-outlined': showIcon, 'input-loading': Contloading }" @focus="showIcon = false"
                 @keyup.enter="displayRes()" @blur="showIcon = true, clear()" />
@@ -89,6 +90,9 @@
 
 <script setup>
 import { ref, onBeforeMount, onMounted } from 'vue';
+
+
+
 
 const loading = ref(true);
 const Contloading = ref(false);
